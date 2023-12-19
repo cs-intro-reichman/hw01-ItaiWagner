@@ -16,7 +16,7 @@ public class Triangle {
 		boolean isTriangle3 = a + c > b;
 		
 		// Determine whether at least one of the combinations is true (form a triangle)
-		boolean isAnyTriangle = (isTriangle1 || isTriangle2 || isTriangle3);
+		boolean isAnyTriangle = (isTriangle1 && isTriangle2 && isTriangle3);
 		
 		// Prints the sides values and whether they can form a triangle
 		System.out.println(a + ", " + b + ", " + c + ": " + isAnyTriangle);
