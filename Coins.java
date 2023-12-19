@@ -4,6 +4,16 @@
  */
 public class Coins {
 	public static void main(String[] args) {
-		// Put your code here
+		// Casting the input cents number from string type to int type
+		int input_cents = Integer.parseInt(args[0]);
+
+		// Divides the total amount of cents to 25 to find how many quarters to use
+		int quarters_num = input_cents / 25;
+
+		// calculate how many cents to use using modulo
+		int cents_num = input_cents % 25;
+
+		// Prints the full string of how many quarters and cents to use   
+		System.out.println("Use " + quarters_num + " quarters and " + cents_num + " cents");
 	}
 }
