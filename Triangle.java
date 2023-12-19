@@ -11,9 +11,9 @@ public class Triangle {
 		int c = Integer.parseInt(args[2]);
 		
 		// determine whether any of the combination of the 3 sides form a triangle
-		boolean isTriangle1 = a + b < c;
-		boolean isTriangle2 = b + c < a;
-		boolean isTriangle3 = a + c < b;
+		boolean isTriangle1 = a + b > c;
+		boolean isTriangle2 = b + c > a;
+		boolean isTriangle3 = a + c > b;
 		
 		// Determine whether at least one of the combinations is true (form a triangle)
 		boolean isAnyTriangle = (isTriangle1 || isTriangle2 || isTriangle3);
